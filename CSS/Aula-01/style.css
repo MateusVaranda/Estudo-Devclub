@@ -1,0 +1,17 @@
+/*Cor do titulo do site*/
+h1 {
+    color: red;
+    background: black;
+}
+
+/*Cor do parágrafo do site*/
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+    button {
+        background: green;
+        color: white;
+        border-color: rgb(3, 70, 3);
+    }
