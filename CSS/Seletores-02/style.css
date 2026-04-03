@@ -1,0 +1,19 @@
+#titulo {
+    color: red;
+}
+
+.texto {
+    font-size: 20px;
+    color: aquamarine;
+    background: gray;
+}
+
+#btn-1 {
+    background: green;
+    color: white;
+}
+
+#btn-2 {
+    background: rgb(214, 202, 178);
+    color: rgb(0, 25, 252);
+}
