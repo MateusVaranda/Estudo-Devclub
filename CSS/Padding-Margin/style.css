@@ -1,0 +1,34 @@
+.pai {
+    background: rgb(196, 47, 255);
+    color: white;
+}
+
+
+.box {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    color: white;
+    padding: 100px;
+}
+
+.estudo {
+    margin: 10px;
+    padding: 10px;
+}
+
+.irma {
+    width: 50px;
+    height: 50px;
+    background: aqua;
+    color: black;
+    margin: 10px;
+}
+
+.irmao {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 255, 13);
+    color: black;
+}
