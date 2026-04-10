@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #593E25;
+    --cor-secundaria: #4A4633;
+    --cor-destaque: #9F7D55;
+    --cor-texto1: #F2AE30;
+    --cor-texto2: #F2C335;
+    --cor-text3: #FF9D00;
+
+}
+
+body {
+    background: #4a463333;
+}
+
+header {
+    background: var(--cor-principal);
+    box-shadow: 0px 4px 10px #000000b7;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header h1 {
+    margin: 18px;
+    color: var(--cor-texto1);
+    font-size: 50px; /*tamanho da fonte*/
+    font-weight: bold;
+}
+
+
+.link-header {
+    display:inline-flex;
+    text-decoration: none;
+    margin: 18px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 370;
+    color: var(--cor-texto1);
+    cursor: pointer;
+}
+
+.btn-01 {
+    background: var(--cor-texto1);
+    color: var(--cor-secundaria);
+    margin: 18px 20px 10px 0;
+    border-radius: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.753);
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-01:hover{
+    background: var(--cor-text3);
+}
+
+.conteudo-01 {
+    display: block;
+}
+
+h2 {
+    color: var(--cor-principal);
+    font-size: 45px;
+    font-weight: 485;
+    text-align: center;
+    margin: 30px;
+}
+
+.apresentacao {
+    display: inline-flex;
+}
+
+.apresentacao img {
+    margin: 20px 10px 30px 20px;
+    width: 40%;
+    border-radius: 8px;
+    
+}
+
+.text-primary {
+    padding: 20px;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+.conteudo-02 {
+    display: inline-block;
+
+}
+
+.subtitulo-conteudo {
+    background: var(--cor-principal);
+    color: #ffbb00;
+    text-shadow: 2px 2px 4px #ffd000cc;
+    font-size: 43px; /*tamanho da fonte*/
+    font-weight: 100; /*grossura da fonte*/
+    text-align: center;
+    padding: 20px;
+}
+
+.sujestao {
+    display: inline-flex;
+}
+
+.produtos-sujestao {
+    background: #926d08a8;
+    display: block;
+    border: 2px solid black;
+    margin: 20px 15px 20px 15px;
+    border-radius: 20px;
+}
+
+
+.produtos-sujestao img {
+    display: block;
+    width: 400px;
+    height: 400px;   /* ← adiciona isso */
+    object-fit: cover; /* ← adiciona isso */
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 3px solid #000000a2;
+}
+
+.destaque {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 250;
+    color: var(--cor-principal);
+}
+
+.destaque-apredentacao {
+    margin: 20px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-style: italic;
+    word-spacing: 8px;
+    color: var(--cor-secundaria);
+}
+
+.button-pedido {
+    display: block;
+    margin: 18px auto;
+    background: var(--cor-texto1);
+    color: var(--cor-secundaria);
+    border-radius: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.753);
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+}
