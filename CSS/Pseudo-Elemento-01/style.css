@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1::first-letter { /* Primeira letra maior e dourada */
+    font-size: 40px;
+    font-weight: bold;
+    color: gold;
+}
+
+p::first-line {  /* Primeira linha azul */
+    color: blue;
+}
+
+input::placeholder {
+    color: green;
+
+}
+
+p::before {
+    content: "😎";
+}
+
+p::after {
+    content: "😁";
+}
