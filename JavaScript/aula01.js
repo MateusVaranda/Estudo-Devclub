@@ -1,0 +1,1 @@
+console.log("Olá, mundo!"); // Imprime "Olá, mundo!" no console
