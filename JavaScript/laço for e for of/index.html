@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Dados</title>
+</head>
+
+<body>
+    <input placeholder="Digite o nome ou contato...">
+    <p></p>
+    <button onclick="pesquisar()">Pesquisar</button>
+</body>
+<script>
+    let p = document.querySelector('p')
+    let input = document.querySelector('input')
+
+    const contatos = [
+        { nome: 'João', telefone: '123456789' },
+        { nome: 'Maria', telefone: '987654321' },
+        { nome: 'Pedro', telefone: '555555555' },
+        { nome: 'Mateus', telefone: '123456789' },
+        { nome: 'Jose', telefone: '987654321' },
+        { nome: 'Paulo', telefone: '123456789' },
+        { nome: 'Marta', telefone: '987654321' },
+        { nome: 'Ana', telefone: '123456789' },
+        { nome: 'Carlos', telefone: '987654321' },
+    ]
+
+    function pesquisar() {
+        for (let i = 0; i < contatos.length; i++) {
+            if (input.value.toLowerCase() === contatos[i].nome.toLowerCase() || input.value === contatos[i].telefone) {
+                p.innerHTML = `Nome: ${contatos[i].nome} <br> Telefone: ${contatos[i].telefone}`
+                break
+            } else {
+                p.innerHTML = 'Contato não encontrado'
+            }
+        }
+    }
+
+</script>
+
+</html>

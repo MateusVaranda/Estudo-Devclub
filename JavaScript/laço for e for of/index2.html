@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Dados</title>
+</head>
+
+<body>
+    <input placeholder="Digite o produto de estoque...">
+    <p></p>
+    <button onclick="pesquisar()">Pesquisar</button>
+</body>
+<script>
+    let p = document.querySelector('p')
+    let input = document.querySelector('input')
+
+    const produtos = [
+        { nome: 'arroz', preco: 10.00 },
+        { nome: 'feijão', preco: 8.00 },
+        { nome: 'macarrão', preco: 5.00 },
+        { nome: 'óleo', preco: 15.00 },
+        { nome: 'sal', preco: 3.00 },
+        { nome: 'açúcar', preco: 7.00 },
+    ]
+
+    function pesquisar() {
+        for (let produto of produtos) {
+            if (produto.nome === input.value) {
+                p.innerText = `O preço do ${produto.nome} é R$${produto.preco.toFixed(2)}`
+                return
+            } else {
+                p.innerText = 'Produto não encontrado'
+            }
+        }
+    }
+
+
+</script>
+
+</html>
