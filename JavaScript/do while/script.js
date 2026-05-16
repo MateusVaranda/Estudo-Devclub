@@ -1,2 +1,9 @@
-const mindset = "Discipline";
-console.log(mindset);
+let numero = 1
+
+do {
+
+    console.log(numero)
+
+    numero++
+
+} while (numero <= 5)
